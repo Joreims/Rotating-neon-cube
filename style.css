@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Geologica', sans-serif;
 }
 body
 {
@@ -52,6 +53,23 @@ body
     background: linear-gradient(#151515,#00ec00);
     transform: rotateY(calc(90deg * var(--i))) translateZ(
         150px); /*300/2=150**/;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+.cube div span h2
+{
+    position: absolute;
+    font-size: 10em;
+    color: #fff;
+    transform: translateZ(50px);
+}
+.cube div span h2:nth-child(1)
+{
+    transform: translateZ(0) translateY(20px);
+    color: rgba(0, 0,0, 0.1);
+    filter: blur(2px);
 }
 .top
 {
